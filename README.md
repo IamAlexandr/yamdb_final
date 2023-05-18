@@ -1,4 +1,4 @@
-![yamdb_workflow](https://github.com/IamAlexandr/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?event=push)(https://github.com/IamAlexandr/yamdb_final/actions)
+![yamdb_workflow](https://github.com/IamAlexandr/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?event=push)
 # Групповой учебный проект "REST API YaMDb"
 ## Яндекс.Практикум
 ### Описание
