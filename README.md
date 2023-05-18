@@ -1,4 +1,5 @@
-  [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/IamAlexandr/yamdb_final/.github/workflows/yamdb_workflow.yml?label=YamDB_workflow)](https://github/actions/workflow/status/IamAlexandr/yamdb_final/.github/workflows/yamdb_workflow.yml?label=YamDB_workflow)
+https://img.shields.io/github/actions/workflow/status/IamAlexandr/yamdb_final/.github/workflows/yamdb_workflow.yml?label=yamdb_workflow&logo=passed&logoColor=green&style=flat-square
+(https://img.shields.io/github/actions/workflow/status/IamAlexandr/yamdb_final/Build/master?label=Build&logo=github)(https://link/to/.github/workflows/yamdb_workflow.yml?label=yamdb_workflow&logo=passed&logoColor=green&style=flat-square)
 # Групповой учебный проект "REST API YaMDb"
 ## Яндекс.Практикум
 ### Описание
