@@ -52,6 +52,26 @@ python3 manage.py runserver
 ```
 Подробная документация по API доступна по адресу http://localhost:8000/redoc/.
 
+
+### Как запустить проект на боевом сервере:
+- Установить на сервере docker и docker-compose. Скопировать на сервер файлы docker-compose.yaml и default.conf:
+```
+-scp docker-compose.yaml <логин_на_сервере>@<IP_сервера>:/home/<логин_на_сервере>/docker-compose.yaml
+-scp default.conf <логин_на_сервере>@<IP_сервера>:/home/<логин_на_сервере>/nginx/docker-compose.yaml
+```
+- Выполнить команды:
+```
+git add .
+git commit -m ""
+git push
+```
+- После успешного завершения процессов workflow на боевом сервере необходимо выполнить следующие команды:
+
+sudo docker-compose exec web python manage.py migrate
+sudo docker-compose exec web python manage.py createsuperuser
+sudo docker-compose exec web python manage.py collectstatic --no-input 
+
+
 ### Участники проекта:
 - Dmitriy839
 - IamAlexandr
