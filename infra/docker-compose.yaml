@@ -12,7 +12,7 @@ services:
     image: iamalexandr/api_yamdb:latest
     restart: always
     volumes:
-      - ../api_yamdb/static/redoc.yaml:/app/static/redoc.yaml
+      - ../api_yamdb/static/:/app/static/
       - ../api_yamdb/static/data/:/app/static/data/
       - static_value:/app/static/
       - media_value:/app/media/
@@ -30,7 +30,7 @@ services:
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
       - static_value:/var/html/static/
       - media_value:/var/html/media/
-      - ../api_yamdb/static/redoc.yaml:/app/static/redoc.yaml
+      - ../api_yamdb/static/:/app/static/
       - ../api_yamdb/static/data/:/app/static/data/
 
     depends_on:
