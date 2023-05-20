@@ -29,6 +29,7 @@ services:
       - static:/var/html/static/
       - media:/var/html/media/
       - ../api_yamdb/static/redoc.yaml:/var/html/redoc/redoc.yaml
+      - ../api_yamdb/static/redoc.yaml:/var/html/redoc/redoc.yaml
       - ../api_yamdb/templates/redoc.html:/var/html/redoc/redoc.html
 
     depends_on:
