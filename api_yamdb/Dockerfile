@@ -6,8 +6,6 @@ COPY requirements.txt /app
 
 RUN pip install -r requirements.txt --no-cache-dir
 
-COPY ./redoc.yaml /app/static/
-
 COPY . .
 
 CMD ["gunicorn", "api_yamdb.wsgi:application", "--bind", "0:8000" ]
