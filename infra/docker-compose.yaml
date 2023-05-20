@@ -37,3 +37,5 @@ volumes:
   database:
   static_value:
   media_value:
+  static:
+  media:
