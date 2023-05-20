@@ -6,6 +6,8 @@ services:
     image: postgres:13.0-alpine
     volumes:
       - database:/var/lib/postgresql/data/
+      - static:/app/static/
+      - media:/app/static/
     env_file:
       - ./.env
   web:
@@ -14,7 +16,6 @@ services:
     volumes:
       - static:/app/static/
       - media:/app/media/
-      - cp $PWD/../api_yamdb/static/redoc.yaml:/home/alex/app/redoc.yaml
     depends_on:
       - db
     env_file:
