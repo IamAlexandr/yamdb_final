@@ -62,17 +62,17 @@ python3 manage.py runserver
 - Выполнить команды:
 ```
 git add .
-```
+
 git commit -m ""
-```
+
 git push
 ```
 - После успешного завершения процессов workflow на боевом сервере необходимо выполнить следующие команды:
 ```
 sudo docker-compose exec web python manage.py migrate
-```
+
 sudo docker-compose exec web python manage.py createsuperuser
-```
+
 sudo docker-compose exec web python manage.py collectstatic --no-input 
 ```
 
