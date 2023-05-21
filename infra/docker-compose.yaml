@@ -11,11 +11,7 @@ services:
     image: iamalexandr/yamdb_final
     restart: always
     volumes:
-      - type: volume
-        source: static_value
-        target: /app/static/app/static/
-        volume:
-          nocopy: false
+      - static_value:/app/static/
       - media_value:/app/media/
     depends_on:
       - db
