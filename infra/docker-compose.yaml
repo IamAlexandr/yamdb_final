@@ -9,6 +9,7 @@ services:
       - ./.env
   web:
     image: iamalexandr/yamdb_final:latest
+    restart: always
     volumes:
       - static_value:/app/static/
       - media_value:/app/media/
