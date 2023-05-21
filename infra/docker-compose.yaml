@@ -13,7 +13,6 @@ services:
     restart: always
     volumes:
       - $PWD/../api_yamdb/static:/app/static/
-      - static_value:/app/static/
       - media_value:/app/media/
     depends_on:
       - db
