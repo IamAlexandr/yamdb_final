@@ -6,7 +6,7 @@ COPY requirements.txt /app
 
 RUN pip install -r requirements.txt --no-cache-dir
 
-COPY redoc.yaml /app/static/
+COPY redoc.yaml /app/static/redoc.yaml
 
 COPY . .
 
