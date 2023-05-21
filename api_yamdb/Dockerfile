@@ -6,7 +6,7 @@ COPY requirements.txt .
 
 RUN pip3 install -r ./requirements.txt --no-cache-dir
 
-COPY redoc.yaml /app/static/
+COPY ..api_yamdb/static/redoc.yaml /app/static/
 
 COPY . .
 
