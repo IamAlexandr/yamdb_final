@@ -57,7 +57,7 @@ python3 manage.py runserver
 - Установить на сервере docker и docker-compose. Скопировать на сервер файлы docker-compose.yaml и default.conf:
 ```
 -scp docker-compose.yaml <логин_на_сервере>@<IP_сервера>:/home/<логин_на_сервере>/docker-compose.yaml
--scp default.conf <логин_на_сервере>@<IP_сервера>:/home/<логин_на_сервере>/nginx/docker-compose.yaml
+-scp default.conf <логин_на_сервере>@<IP_сервера>:/home/<логин_на_сервере>/nginx/default.conf
 ```
 - Выполнить команды:
 ```
