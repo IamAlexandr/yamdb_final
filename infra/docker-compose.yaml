@@ -10,8 +10,8 @@ services:
   web:
     image: iamalexandr/yamdb_final:latest
     volumes:
-      - static_value:/app/static/
-      - media_value:/app/media/
+      - static_value:/app/static/staticfiles
+      - media_value:/app/media/staticfiles
     depends_on:
       - db
     env_file:
@@ -25,8 +25,8 @@ services:
 
     volumes:
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
-      - static_value:/var/html/static/
-      - media_value:/var/html/media/
+      - static_value:/var/html/static/staticfiles
+      - media_value:/var/html/media/staticfiles
 
     depends_on:
       - web
