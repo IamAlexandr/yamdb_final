@@ -116,7 +116,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ValidationError'
-          description: 'Отсутствует обязательное поле или оно некорректно '
+          description: 'Отсутствует обязательное поле или оно некорректно'
         404:
           description: Пользователь не найден
 
