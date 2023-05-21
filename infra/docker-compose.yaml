@@ -12,7 +12,7 @@ services:
     volumes:
       - static_value:/app/static/
       - media_value:/app/media/
-      - ./redoc.yaml:/app/static/redoc.yaml:ro
+      - ./redoc.yaml:/app/static/redoc.yaml
     depends_on:
       - db
     env_file:
@@ -36,14 +36,3 @@ volumes:
   static_value:
   media_value:
   database:
-  static:
-    driver: local
-    driver_opts:
-      type: "none"
-      o: "bind"
-      device: ${PWD}/static
-    bind:
-      propagation: "rshared"
-      source: ${PWD}/redoc.yaml
-      target: /app/static/redoc.yaml
-      read_only: true
