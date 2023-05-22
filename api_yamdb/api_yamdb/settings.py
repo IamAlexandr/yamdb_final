@@ -23,7 +23,6 @@ DJANGO_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_filters',
-    'django.contrib.staticfiles',
 ]
 
 THIRD_PARTY_APPS = [
